@@ -31,6 +31,7 @@ void loop() {
   readSensor();
   idleState();
 
+  sensors_event_t accel, gyro, temp;
   mpu.getEvent(&accel, &gyro, &temp);
   Serial.print("Accelerometer X: ");
   Serial.print(accel.acceleration.x);
@@ -46,5 +47,5 @@ void loop() {
   Serial.print(" rad/s, Z: ");
   Serial.print(gyro.gyro.z);
   Serial.println(" rad/s");
-  
+
 }
