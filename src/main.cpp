@@ -34,4 +34,14 @@ void loop() {
   Serial.print("Altitude: ");
   Serial.print(data[2]);
   Serial.println(" m");
+  Serial.print("Yaw: ");
+  Serial.print(data[3]);
+  Serial.println(" °");
+  Serial.print("Pitch: ");
+  Serial.print(data[4]);
+  Serial.println(" °");
+  Serial.print("Roll: ");
+  Serial.print(data[5]);
+  Serial.println(" °");
+  delay(1000); // Delay for readability
 }
